@@ -1,0 +1,69 @@
+.btn {
+    border-radius: 50%;
+    height: 35px;
+    margin: 5px;
+    position: relative;
+    width: 35px;
+    box-shadow: 
+        inset 0 2px 3px rgba(255,255,255,0.5),
+        inset 0 -2px 3px rgba(0,0,0,0.65);
+    background: #3caea3;
+    border: none;
+    // border-color: #3caea3;
+    color: #eaf7f6;
+    cursor: pointer;
+    &>* {
+        font-size: 0;
+    }
+    &:before {
+        font-size: 22px;
+        margin-top: -12px;
+        margin-left: -10px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+    }
+    &:hover {
+        opacity: 0.75;
+        @include shadow('box', 'inset', 0, 0, 10px, "rgba(0,0,0,0.85)");    
+    }
+    
+}
+
+.btn_start {
+    @include icomoon("play3");
+    background: $color__background-start;
+    border-color: $color__background-start;
+}
+
+.btn_hold {
+    @include icomoon("pause2");
+    background: $color__background-hold;
+    border-color: $color__background-hold;
+    // color: #28282a;
+}
+
+.btn_stop {
+    @include icomoon("stop2");
+    background: $color__background-stop;
+    border-color: $color__background-stop;
+    // color: #28282a;
+}
+
+.btn_reset {
+    @include icomoon("history");
+    background: $color__background-start;
+    border-color: $color__background-start;
+}
+
+.btn_dim {
+    @include icomoon("brightness-contrast");
+    background: $color__background-button;
+    border-color: $color__background-button;
+}
+
+.btn_switch {
+    @include icomoon("switch");
+    background: $color__background-button;
+    border-color: $color__background-button;
+}

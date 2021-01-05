@@ -1,0 +1,17 @@
+.field {
+    display: flex;
+
+    & > * {
+        box-sizing: border-box;
+        color: $color__text-wt;
+        width: 33.333%;
+        font-size: 4rem;
+        text-align: center;
+        line-height: 1.25;
+        background-color: transparent;
+        border-radius: 5px;
+        border: solid 1px #ffffff;
+        margin: 18px;
+        @include shadow('box', 'inset', 0, 0, 10px, "rgba(0,0,0,0.85)");    
+    }
+}

@@ -1,0 +1,77 @@
+html {
+	box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after { /* Inherit box-sizing to make it easier to change the property for components that leverage other behavior; see https://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/ */
+	box-sizing: inherit;
+}
+
+body {
+	// background: no-repeat $color__gradient-line; /* Fallback for when there is no custom background color defined. */
+	background-color: #010b1c;
+	color: $color__text-wt;
+    font-family: $font__main;
+	padding-top:50px;
+	position: relative;
+	& > * {
+		position: relative;
+		z-index: 500;
+	}
+	&:before,
+	&:after {
+		position: absolute;
+		top: 0;
+		left: 0;
+		bottom: 0;
+		right: 0;
+		z-index: 1;
+	}
+	&:before {
+		content: '';
+		background-image: linear-gradient(
+			to bottom left,
+			rgba(255,255,255,0.15), 
+			transparent 30%
+		);
+	}
+	&:after {
+		content: '';
+		background-image: linear-gradient(
+			to top right,
+			rgba(1,3,8,0.75), 
+			transparent 50%
+		);
+	}
+	@include breakpoint(tablet) {
+		padding-top: 0;
+	}
+}
+
+hr {
+	background-color: $color__background-hr;
+	border: 0;
+	height: 1px;
+	margin-bottom: 1.5em;
+}
+
+p {
+	font-size: $font__size-base;
+	@include breakpoint(desktop) {
+		font-size: $font__size-med;
+	}
+}
+
+@import "lists";
+
+img {
+	height: auto; /* Make sure images are scaled correctly. */
+	max-width: 100%; /* Adhere to container width. */
+}
+
+figure {
+	margin: 1em 0; /* Extra wide images within figure tags don't overflow the content area. */
+}
+
+@import "tables";

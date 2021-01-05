@@ -1,0 +1,65 @@
+h1, h2, h3, h4, h5, h6 {
+	clear: both;
+}
+
+.hdg {
+	margin: 0;
+	text-transform: capitalize;
+	font-weight: 400;
+}
+
+.hdg_max {
+	font-size: $font__size-huge;
+	@include breakpoint(tablet) {
+		font-size: $font__size-max
+	}
+
+}
+
+.hdg_1 {
+	font-size: $font__size-biggest;
+	@include breakpoint(tablet) {
+		font-size: $font__size-huge;
+	}
+}
+
+.hdg_2 {
+	font-size: $font__size-big;
+	@include breakpoint(tablet) {
+		font-size: $font__size-biggest;
+	}
+}
+
+.hdg_3 {
+	font-size: $font__size-med;
+	@include breakpoint(tablet) {
+		font-size: $font__size-bigger;
+	}
+}
+
+.hdg_4 {
+	font-size: $font__size-med;
+	@include breakpoint(tablet) {
+		font-size: $font__size-big;
+	}
+}
+
+.hdg_5 {
+	font-size: $font__size-base;
+	@include breakpoint(tablet) {
+		font-size: $font__size-med;
+	}
+}
+
+.hdg_6 {
+	font-size: $font__size-base;
+}
+
+.mix-hdg_subtle {
+	text-transform: none;
+	font-weight: 100;
+}
+
+.mix-hdg_thick {
+	font-weight: 700;
+}

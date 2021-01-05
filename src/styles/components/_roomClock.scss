@@ -1,0 +1,21 @@
+.roomClock {
+     width: 50%;
+    //  padding: 5px;
+ }
+
+.roomClock-hd {
+    margin:0 0 0 10px;
+    @include shadow(text, '', 0, 2px, 3px, "rgba(0,0,0,0.85)");
+}
+
+.roomClock-bd {
+    padding: 5px 10px;
+    border-radius: 5px 0 0 5px;
+    @include gradient("right", $color__background-brand, "transparent", 100%);
+}
+
+.roomClock-bd_active {
+    padding: 5px 10px;
+    border-radius: 5px 0 0 5px;
+    @include gradient('right', $color__background-start, 'transparent', 100%);
+}

@@ -1,0 +1,68 @@
+$color__base-black: #000000;
+$color__base-offWhite: #dfe0e5;
+$color__base-white: #ffffff;
+
+$color__grey-dark: #28282A;
+$color__grey-slate: #58595B;
+$color__grey-light: #7C7D80;
+
+$color__swx-orange: #ED6622;
+$color__pallette-start: #1b9203;
+$color__pallette-stop: #ca0606;
+
+$color__screen-light: rgba(255, 255, 255, 0.25);
+$color__screen-medium: rgba(255, 255, 255, 0.5);
+$color__screen-heavy: rgba(255, 255, 255, 0.85);
+
+$color__tint-light: rgba(0, 0, 0, 0.25);
+$color__tint-medium: rgba(0, 0, 0, 0.5);
+$color__tint-heavy: rgba(0, 0, 0, 0.85);
+
+$color__background-body: $color__base-black;
+$color__background-bodyDk: $color__grey-dark;
+$color__background-bodyMd: $color__grey-slate;
+$color__background-bodyLt: $color__grey-light;
+$color__background-bodyOw: $color__base-offWhite;
+$color__background-bodyWt: $color__base-white;
+$color__background-screen: #f1f1f1;
+$color__background-hr: #ccc;
+$color__background-brand: $color__swx-orange;
+$color__background-button: $color__swx-orange;
+$color__background-start: $color__pallette-start;
+$color__background-stop: $color__pallette-stop;
+$color__background-hold: $color__grey-light;
+$color__background-pre: #eee;
+$color__background-ins: #fff9c0;
+
+$color__text-screen: $color__grey-dark;
+$color__text-input: $color__grey-slate;
+$color__text-input-focus: $color__grey-dark;
+$color__text-main: #404040;
+$color__text-dk: $color__grey-dark;
+$color__text-md: $color__grey-slate;
+$color__text-lt: $color__base-offWhite;
+$color__text-wt: $color__base-white;
+$color__text-brand: $color__swx-orange;
+
+$color__link: $color__swx-orange;
+$color__linkDk: $color__grey-dark;
+$color__linkLt: $color__base-offWhite;
+$color__linkWt: $color__base-white;
+$color__link-visited: purple;
+$color__link-hover: $color__swx-orange;
+$color__link-hoverLt: $color__base-offWhite;
+$color__link-hoverDk: $color__grey-dark;
+
+$color__border-button: #ccc #ccc #bbb;
+$color__border-button-hover: #ccc #bbb #aaa;
+$color__border-button-focus: #aaa #bbb #bbb;
+$color__border-input: $color__grey-light;
+$color__border-abbr: $color__grey-slate;
+$color__border-dk: $color__grey-dark;
+$color__border-wt: $color__base-white;
+
+$color__border: $color__swx-orange;
+
+$color__gradient-line: linear-gradient($color__background-bodyWt, $color__background-bodyOw);
+// $color__gradient-line: linear-gradient($color__background-body, $color__background-bodyDk);
+$color__gradient-sideFade: linear-gradient(to right, $color__background-brand, transparent);

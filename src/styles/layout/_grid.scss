@@ -1,0 +1,41 @@
+
+.grid {
+    @include clearfix;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    margin: -15px -10px 0;
+    @include breakpoint(tablet) {
+        flex-direction: row;
+    }
+}
+
+[class*='grid-col_'] {
+    @include border-box;
+    float: left;
+    padding: 15px 10px 0;
+    width: 100%;
+}
+
+@include breakpoint(tablet) {
+    @for $i from 1 through 12 {
+        .grid-col_#{$i}of12 {
+            width: 100% / 12 * $i;
+        }
+    }
+}
+
+.mix-grid_gapMd {
+    margin: -15px -20px 0;
+    [class*='grid-col_'] {
+        padding: 15px 20px 0;
+    }
+}
+
+.mix-grid_gapLg {
+    margin: -15px -30px 0;
+    [class*='grid-col_'] {
+        padding: 15px 30px 0;
+    }
+}

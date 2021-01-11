@@ -27,6 +27,8 @@ COPY public ./public
 RUN mkdir -p ./src
 COPY src ./src
 
+RUN set NODE_OPTIONS="--max-old-space-size=4096"
+ENV GENERATE_SOURCEMAP=false
 RUN npm run build
 
 # Now configure the executable image
